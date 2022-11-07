@@ -1,24 +1,47 @@
-pour configurer git
--aller sur https://git-scm.com,telecharger et installer git
+# COURS GIT
 
--creer un compte gitub ou gitlab
-**git config--global user.name "nom prenom"**
+Pour configurer GIT : 
+
+* aller sur https://git-scm.com/ , télécharger et installer git
+
+* Créer un compte github ou gitlab
+
+**git config --global user.name "Nom Prenom"**
+
+**git config --global user.email "votre mail**
+
+Pour vérifier la config on fait :
+
+**git config --global --list** ==> user.email=votremail@mail.com user.name=Votre nom et prénom
 
 
-**git config--global user.email "votre mail"**
+# DEPOT LOCAL
+Comme son nom l'indique , c'est un dépôt qui se trouve sur notre ordinateur
 
-pour verifier la config
-
-git config--global --list user.
-
-#depot local
-
-initialisation du depot git
+Initialisation du dépôt git
 
 **git init**
 
-  git add SUIVI DU NOM DU FICHIER
+Afin de dire à git quel fichier doit être suivi
 
-  afin de verifier l'ajout en fait:
+**git add SUIVI_DU_NOM_DU_FICHIER**
 
-  **git status**
+git add accueil.html
+
+
+Afin de vérifer le statut de l'ajout on fait :
+
+**git status**
+
+**git add -A** OU **git add .** pour ajouter tous les fichiers
+
+git commit -m "premier commit"
+
+pour faire une modif dans le VIM
+
+on tape **git --amend**
+puis i le mot **INSERSION** apparait tout en bas du terminal en ce momment on modifie puis on appuis sur echap ensuite on tape **:wq!** pour enregistrer et quitter **
+
+**w = enregistrer**
+**q =quitter**
+**! = forcer larret**
